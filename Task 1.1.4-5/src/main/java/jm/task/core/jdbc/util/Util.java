@@ -21,8 +21,6 @@ public class Util {
             cfg.setProperty("hibernate.connection.url", DB_URL);
             cfg.setProperty("hibernate.connection.username", DB_USERNAME);
             cfg.setProperty("hibernate.connection.password", DB_PASSWORD);
-            // cfg.setProperty("dialect", "org.hibernate.dialect.MySQLDialect");
-            // cfg.setProperty("hibernate.hbm2ddl.auto", "update");
             StandardServiceRegistryBuilder ssrb = new StandardServiceRegistryBuilder()
                     .applySettings(cfg.getProperties());
             return sf = cfg.buildSessionFactory(ssrb.build());
